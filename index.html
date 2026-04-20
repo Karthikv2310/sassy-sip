@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sassy Sips – Stay Chill, Sip Sass</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#home">🍹 Sassy<span>Sips</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#bulk">Bulk Orders</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Vibes</a></li>
+      <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-tag">✨ Bulk Orders Only · Premium Beverages</span>
+    <h1 class="hero-title">
+      Stay Chill,<br/>
+      <span class="gradient-text">Sip Sass.</span>
+    </h1>
+    <p class="hero-sub">Mocktails, Mojitos & Thick Shakes for parties that go <strong>hard 🔥</strong></p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary">Plan Your Party 🎉</a>
+      <a href="#menu" class="btn btn-ghost">See the Menu</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span>500+</span><p>Events Served</p></div>
+      <div class="stat"><span>12+</span><p>Signature Drinks</p></div>
+      <div class="stat"><span>100%</span><p>Vibe Guaranteed</p></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="drink-card-float card-f1">
+      <div class="drink-emoji">🍹</div>
+      <p>Mojitos</p>
+    </div>
+    <div class="drink-card-float card-f2">
+      <div class="drink-emoji">🥤</div>
+      <p>Mocktails</p>
+    </div>
+    <div class="drink-card-float card-f3">
+      <div class="drink-emoji">🧋</div>
+      <p>Thick Shakes</p>
+    </div>
+    <div class="hero-circle"></div>
+  </div>
+  <div class="scroll-hint">Scroll down ↓</div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-tag">Who We Are</span>
+        <h2>We don't do boring drinks. <span class="gradient-text">Period.</span></h2>
+        <p>Sassy Sips is your go-to bulk beverage brand for events that actually slap. We craft premium mocktails, fresh mojitos, and luscious thick shakes — made for vibes, made for the 'gram, made for <em>you</em>.</p>
+        <p>Whether it's a rooftop wedding, a college fest, or a corporate gig you didn't ask for — we make the drinks worth showing up for. 💅</p>
+        <div class="about-pills">
+          <span>🌿 Fresh Ingredients</span>
+          <span>🎊 Event Specialists</span>
+          <span>📸 Insta-worthy</span>
+          <span>⚡ Bulk Orders</span>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card ac1">
+          <span>🥂</span>
+          <p>Weddings</p>
+        </div>
+        <div class="about-card ac2">
+          <span>🎓</span>
+          <p>College Fests</p>
+        </div>
+        <div class="about-card ac3">
+          <span>💼</span>
+          <p>Corporate Events</p>
+        </div>
+        <div class="about-card ac4">
+          <span>🏠</span>
+          <p>House Parties</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MENU ========== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Sips</span>
+      <h2>Pick Your <span class="gradient-text">Poison</span> 🍸</h2>
+      <p>All drinks are crafted for bulk event orders. Pricing on request — we keep it fair & fresh.</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="mojitos">🌿 Mojitos</button>
+      <button class="tab-btn" data-tab="mocktails">🍹 Mocktails</button>
+      <button class="tab-btn" data-tab="shakes">🧋 Thick Shakes</button>
+    </div>
+
+    <!-- Mojitos -->
+    <div class="menu-grid active" id="tab-mojitos">
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#a8edbd,#2db87a)">🌿</div>
+        <h3>Minty Lime Mojito</h3>
+        <p>Classic, crisp, and dangerously refreshing. Your thirst doesn't stand a chance.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#a0c4ff,#0066cc)">🌊</div>
+        <h3>Blue Lagoon Mojito</h3>
+        <p>Ocean-blue, tropical-dreamy. One sip and you're basically on a beach.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#ffb3b3,#e84040)">🍉</div>
+        <h3>Watermelon Chill Mojito</h3>
+        <p>Summer in a glass. Sweet, chill, and low-key addictive.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#f9e4b7,#d4a017)">🍋</div>
+        <h3>Classic Cuban Mojito</h3>
+        <p>OG recipe. No drama, just pure vibes and fresh mint.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+    </div>
+
+    <!-- Mocktails -->
+    <div class="menu-grid" id="tab-mocktails">
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#ffcf77,#ff6b35)">🌅</div>
+        <h3>Virgin Sunset Splash</h3>
+        <p>Layers of gold and coral. Looks as good as it tastes — post it immediately.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#ffe082,#43e97b)">🌴</div>
+        <h3>Tropical Thunder</h3>
+        <p>Passionfruit, mango, lime. An absolute tropical ambush. Zero regrets.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#e18aff,#7928ca)">🫐</div>
+        <h3>Berry Blast Fizz</h3>
+        <p>Purple, fizzy, and extra. Just like your bestie at every event.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#fffb8a,#00c9a7)">🍋</div>
+        <h3>Citrus Spark Cooler</h3>
+        <p>Zingy, sparkling, and unapologetically bright. Your taste buds will thank you.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+    </div>
+
+    <!-- Thick Shakes -->
+    <div class="menu-grid" id="tab-shakes">
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#ce93d8,#6a1b9a)">🫐</div>
+        <h3>Blackcurrant Shake</h3>
+        <p>Deep, dark, and dramatically delicious. The brooding queen of the menu.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#fff9c4,#ffe082)">🍦</div>
+        <h3>Vanilla Cream Shake</h3>
+        <p>Classic, luxe, and criminally creamy. Old money energy in a glass.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+      <div class="drink-card">
+        <div class="drink-icon" style="background: linear-gradient(135deg,#ffcdd2,#e91e63)">🍓</div>
+        <h3>Strawberry Bliss Shake</h3>
+        <p>Pink, dreamy, and completely over-the-top. Basically a vibe in drinkable form.</p>
+        <span class="price-tag">Bulk orders only · Request a quote 😉</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BULK ORDERS ========== -->
+<section class="bulk" id="bulk">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">We Cater</span>
+      <h2>Your Event, Our <span class="gradient-text">Sips 🎉</span></h2>
+      <p>Minimum 50 servings. Maximum vibes. Always.</p>
+    </div>
+    <div class="bulk-grid">
+      <div class="bulk-card">
+        <div class="bulk-icon">💍</div>
+        <h3>Weddings</h3>
+        <p>Make your big day even sweeter with custom drink stations and signature mocktail menus.</p>
+      </div>
+      <div class="bulk-card">
+        <div class="bulk-icon">🎓</div>
+        <h3>College Fests</h3>
+        <p>Big crowd? No problem. We scale. Fresh, fast, and absolutely crowd-pleasing.</p>
+      </div>
+      <div class="bulk-card">
+        <div class="bulk-icon">🏠</div>
+        <h3>House Parties</h3>
+        <p>Level up the pregame. Let us handle the drinks while you handle the playlist.</p>
+      </div>
+      <div class="bulk-card">
+        <div class="bulk-icon">💼</div>
+        <h3>Corporate Gigs</h3>
+        <p>Turn boring meetings into sip-and-mingle moments. Premium drinks, zero drama.</p>
+      </div>
+      <div class="bulk-card">
+        <div class="bulk-icon">🎪</div>
+        <h3>Pop-ups & Fairs</h3>
+        <p>Branded drink stalls that attract a crowd. Watch the queue form in real time.</p>
+      </div>
+      <div class="bulk-card">
+        <div class="bulk-icon">🌙</div>
+        <h3>Night Events</h3>
+        <p>Rooftop parties, sunset soirées — we bring the glow up to every after-dark event.</p>
+      </div>
+    </div>
+    <div class="bulk-cta">
+      <a href="#contact" class="btn btn-primary">Plan Your Event ✨</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">The Feed</span>
+      <h2>Scroll-Worthy <span class="gradient-text">Sips 📸</span></h2>
+      <p>Content so good it practically posts itself.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-tall" style="background: linear-gradient(145deg, #a8edbd 0%, #43b87a 100%)">
+        <div class="gallery-overlay"><p>🌿 Minty Fresh Vibes</p></div>
+        <div class="gallery-emoji">🍹</div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(145deg, #ffcdd2 0%, #e91e63 100%)">
+        <div class="gallery-overlay"><p>🍓 Strawberry Dreams</p></div>
+        <div class="gallery-emoji">🧋</div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(145deg, #a0c4ff 0%, #0066cc 100%)">
+        <div class="gallery-overlay"><p>🌊 Ocean Blue</p></div>
+        <div class="gallery-emoji">🥤</div>
+      </div>
+      <div class="gallery-item gi-wide" style="background: linear-gradient(145deg, #ffcf77 0%, #ff6b35 100%)">
+        <div class="gallery-overlay"><p>🌅 Sunset Setup</p></div>
+        <div class="gallery-emoji">🍸</div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(145deg, #e18aff 0%, #7928ca 100%)">
+        <div class="gallery-overlay"><p>💜 Berry Blast</p></div>
+        <div class="gallery-emoji">🫐</div>
+      </div>
+      <div class="gallery-item" style="background: linear-gradient(145deg, #fffb8a 0%, #00c9a7 100%)">
+        <div class="gallery-overlay"><p>⚡ Citrus Spark</p></div>
+        <div class="gallery-emoji">🍋</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Real Talk</span>
+      <h2>Good Vibes in <span class="gradient-text">Every Sip 💬</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="testi-text">"Best drinks at our party fr 🔥 Everyone kept asking who catered the drinks. Total crowd pleaser."</p>
+        <div class="testi-author">
+          <div class="avatar">P</div>
+          <div><strong>Priya S.</strong><br/><span>Wedding, Bengaluru</span></div>
+        </div>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-text">"Bro the Watermelon Mojito hit different 😭 We ordered for our college farewell and it was actually insane."</p>
+        <div class="testi-author">
+          <div class="avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">R</div>
+          <div><strong>Rahul K.</strong><br/><span>College Fest, Mysuru</span></div>
+        </div>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-text">"Our corporate event was actually fun for once lmao. Sassy Sips understood the assignment 💅"</p>
+        <div class="testi-author">
+          <div class="avatar" style="background:linear-gradient(135deg,#fa709a,#fee140)">N</div>
+          <div><strong>Neha M.</strong><br/><span>Corporate Event, Pune</span></div>
+        </div>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-text">"Ordered Berry Blast Fizz for our rooftop party. Everyone was obsessed. Already planning next order ngl 👏"</p>
+        <div class="testi-author">
+          <div class="avatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)">A</div>
+          <div><strong>Arjun T.</strong><br/><span>Rooftop Party, Mumbai</span></div>
+        </div>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-text">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Tell Us Your Vibe,<br/><span class="gradient-text">We'll Handle the Sips. 🍹</span></h2>
+        <p>No event too big, no crowd too wild. Slide into our DMs or fill the form — we respond faster than your crush ever did. 😂</p>
+        <a href="https://wa.me/919999999999?text=Hey%20Sassy%20Sips!%20I%20want%20to%20place%20a%20bulk%20order%20for%20my%20event%20🎉" target="_blank" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <div class="contact-info">
+          <p>📧 hello@sassysips.in</p>
+          <p>📍 Available Pan-India for bulk orders</p>
+          <p>🕐 Replies within 2 hours (usually faster 😜)</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label>Your Name ✨</label>
+          <input type="text" placeholder="What do your friends call you?" required/>
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp 📱</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" required/>
+        </div>
+        <div class="form-group">
+          <label>Event Type 🎊</label>
+          <select required>
+            <option value="" disabled selected>What's the vibe?</option>
+            <option>💍 Wedding</option>
+            <option>🎓 College Fest</option>
+            <option>🏠 House Party</option>
+            <option>💼 Corporate Event</option>
+            <option>🎪 Pop-up / Fair</option>
+            <option>🌙 Night Event</option>
+            <option>Other (tell us!)</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Expected Guests 👥</label>
+            <input type="number" placeholder="50+" min="50"/>
+          </div>
+          <div class="form-group">
+            <label>Event Date 📅</label>
+            <input type="date"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Your Vibe / Message 💬</label>
+          <textarea rows="3" placeholder="Tell us your dream drink setup, theme, or just vibe-dump here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Send it! 🚀</button>
+        <p class="form-note">We'll slide back into your inbox within 2 hours 💌</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#home">🍹 Sassy<span>Sips</span></a>
+        <p>Good Vibes in Every Sip.<br/>Bulk orders for events that actually go off. 🔥</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#about">About Us</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#bulk">Bulk Orders</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Follow the Vibe</h4>
+        <a href="#">📸 Instagram</a>
+        <a href="#">🎵 TikTok / Reels</a>
+        <a href="#">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sassy Sips. Made with 🍹 and zero boring energy.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
